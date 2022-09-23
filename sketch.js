@@ -8,7 +8,9 @@ function setup() { //einmal auszuführen
 
 function draw() {
   // Ohne background = transparent
+  text("X-Koordinate der Maus: " + mouseX , 100, 180);
   noStroke;
-  fill(255, 50);
+ // if(  ){}else{}
+  fill(mouseX/windowWidth*255, mouseY/windowHeight*255, 100); //fill(r,g,b)
   circle(mouseX, mouseY, 35);
 }
